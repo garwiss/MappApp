@@ -1,0 +1,268 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 7px 10px 7px 10px;
+  width: 35%;
+  z-index: 1;
+
+  border-radius: 50px;
+  background: linear-gradient(-30deg, #0b1b3d 50%, #08142b 50%);
+  opacity: 0.85;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    width: 50%;
+  }
+  #addpointButton {
+    font-size: 10px;
+  }
+  #querypointButton {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navbar {
+    width: 80%;
+  }
+  #addpointButton {
+    font-size: 16px;
+  }
+  #querypointButton {
+    font-size: 16px;
+  }
+}
+
+.map {
+  flex: 1;
+  width: 100%;
+}
+
+.jsPanel2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+}
+
+.input-group  {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button-group button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+#addpointButton {
+ 
+  width: 50%;
+  border-radius: 50px 0px 0px 50px;
+  /* background: linear-gradient(-30deg, #0b1b3d 50%, #08142b 50%);
+  display: inline-block; */
+  color: red;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+#querypointButton {
+ 
+  width: 50%;
+  border-radius: 0px 50px 50px 0px;
+  display: inline-block;
+  color: red;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+#saveButton {
+  background-color: green;
+}
+
+#closeButton {
+  background-color: red;
+}
+
+.notification {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 300px;
+  text-align: center;
+  z-index: 1;
+  display: none;
+}
+
+#refreshButton {
+  padding: 5px 10px;
+  background-color: #00cd00;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.edit-delete-button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: #007bfc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+
+}
+
+.delete-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.jspanel-edit {
+  padding: 20px;
+}
+
+.jspanel-edit label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.jspanel-edit input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.jspanel-edit button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.jspanel-edit button.closeBtn {
+  background-color: #dc3545;
+}
+
+.edit-panel-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#confirmDelete {
+  background-color: green;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 80px;
+  padding: 10px 10px;
+}
+
+#cancelDelete {
+  background-color: red;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 80px;
+  padding: 10px 10px;
+}
+
+.popUpDelete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
